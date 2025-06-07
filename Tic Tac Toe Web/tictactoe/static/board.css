@@ -1,0 +1,25 @@
+.board{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 100px;
+    background: url("/static/image.png") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    width: 600px;
+    height: 600px;
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.board-cell {
+  position: relative;
+  z-index: 1;
+  font-size: 48px;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
